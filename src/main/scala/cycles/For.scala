@@ -5,7 +5,7 @@ object For {
   def main(args: Array[String]): Unit = {
     def unicode(str: String) = {
       var p = 1
-      for (i <- 0 to str.length - 1) {
+      for (i <- 0 until str.length) {
         println(str.charAt(i))
         p = p * str.charAt(i).toInt
       }
