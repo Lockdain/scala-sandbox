@@ -7,7 +7,7 @@ object For {
       var p = 1
       for (i <- 0 to str.length - 1) {
         println(str.charAt(i))
-        p = p * str.charAt(i)
+        p = p * str.charAt(i).toInt
       }
       p
     }
